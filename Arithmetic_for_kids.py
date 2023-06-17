@@ -8,6 +8,20 @@ Description: This program lets a child practice arithmetic skills. The program s
              If the child answers incorrectly, the problem should be repeated (with the two same numbers).
 '''
 
+'''
+# ******************************************************************************
+# *                               COPYRIGHT NOTICE                             *
+# ******************************************************************************
+# *                                                                            *
+# *  This code is authored by Marcelo Villalobos Diaz                          *
+# *  You are free to use, modify, and distribute this code, provided           *
+# *  you give appropriate credit by including the author's name.               *
+# *                                                                            *
+# *  Copyright (c) 2023 Marcelo Villalobos Diaz                                *
+# *                                                                            *
+# ******************************************************************************
+'''
+
 import random
 
 answer = int(input("Would you like to add(1), subtract(2) or multiply(3)? "))
@@ -22,31 +36,38 @@ while play == 1:
     multiplication = a * b
 
     while answer != 1 and answer != 2 and answer != 3:
-            answer = int(input("Please enter a valid option! To add(1), subtract(2) or multiply(3): "))
+        answer = int(
+            input("Please enter a valid option! To add(1), subtract(2) or multiply(3): "))
 
     if answer == 1:
-        answerAddition = int(input("What is " + str(a) + " + " + str(b) + " equal to: "))
+        answerAddition = int(
+            input("What is " + str(a) + " + " + str(b) + " equal to: "))
 
         while answerAddition != addition:
-            answerAddition = int(input("That is incorrect, what is " + str(a) + " + " + str(b) + " equal to: "))
+            answerAddition = int(
+                input("That is incorrect, what is " + str(a) + " + " + str(b) + " equal to: "))
 
         if answerAddition == addition:
             print("That is correct!")
-            
+
     elif answer == 2:
-        answerSubtraction = int(input("What is " + str(a) + " - " + str(b) + " equal to: "))
+        answerSubtraction = int(
+            input("What is " + str(a) + " - " + str(b) + " equal to: "))
 
         while answerSubtraction != subtraction:
-            answerSubtraction = int(input("That is incorrect, what is " + str(a) + " - " + str(b) + " equal to: "))
+            answerSubtraction = int(
+                input("That is incorrect, what is " + str(a) + " - " + str(b) + " equal to: "))
 
         if answerSubtraction == subtraction:
             print("That is correct!")
-            
+
     elif answer == 3:
-        answerMultiplication = int(input("What is " + str(a) + " * " + str(b) + " equal to: "))
+        answerMultiplication = int(
+            input("What is " + str(a) + " * " + str(b) + " equal to: "))
 
         while answerMultiplication != multiplication:
-            answerMultiplication = int(input("That is incorrect, what is " + str(a) + " * " + str(b) + " equal to: "))
+            answerMultiplication = int(
+                input("That is incorrect, what is " + str(a) + " * " + str(b) + " equal to: "))
 
         if answerMultiplication == multiplication:
             print("That is correct!")
@@ -58,6 +79,7 @@ while play == 1:
         play = int(input("Would you like to try again? (1 for Yes, 2 for No): "))
 
     if play == 1:
-        answer = int(input("Would you like to add(1), subtract(2) or multiply(3)? "))
+        answer = int(
+            input("Would you like to add(1), subtract(2) or multiply(3)? "))
     if play == 2:
         print("Thank you for playing!")
